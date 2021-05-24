@@ -1,0 +1,15 @@
+<meta>
+	<info author='rdror' name='Report System' version='20.05.2021'/>
+	
+	<oop>true</oop>
+	
+	<script src='CReport.lua'  type='client' cache='false' />
+    <script src='SReport.lua' type='server'/>
+
+	<file src='index.html' />
+	<file src='js/mtaevents.js' />
+	<file src='js/uikit.min.js' />
+	
+	<file src='css/style.css' />
+	<file src='css/uikit.min.css' />
+</meta>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body style="background: transparent;">
+    <div class="center">
+      <div class="uk-card uk-card-secondary  uk-width-1-2@m" style="max-width: 700px;">
+          <div class="uk-card-header">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-expand">
+                      <h3 class="uk-card-title uk-margin-remove-bottom">Система репортов</h3>
+                      <p class="uk-text-meta uk-margin-remove-top">Опишите в поле, проблему с которой вы столкнулись, и в ближайшее время вам помогут.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="uk-card-body">
+              <textarea class="uk-textarea" maxlength="120" id="problems" style="min-height:200px; max-height: 50px; min-width: 100%; max-height: 100%;"></textarea>
+          </div>
+          <div class="uk-card-footer">
+              <a href="#" class="uk-button uk-button-primary" onclick="mta.triggerEvent('ShowUI_Report');">Закрыть</a>
+              <a href="#" class="uk-button uk-button-default uk-float-right" onclick="mta.triggerEvent('OnClientSendReport', document.getElementById('problems').value);">Отправить</a>
+          </div>
+      </div>
+    </div>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/mtaevents.js"></script>
+  </body>
+</html>
